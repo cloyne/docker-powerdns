@@ -10,6 +10,7 @@ master=yes
 slave=yes
 
 # Allow AXFR from everywhere (data is available publicly on GitHub anyway)
+disable-axfr=no
 allow-axfr-ips=
 
 # To be anonymous
