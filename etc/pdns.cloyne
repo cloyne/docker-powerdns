@@ -1,0 +1,16 @@
+# Disable recursion
+allow-recursion=
+
+# We use runit to assure the process is running
+guardian=no
+daemon=no
+
+# DNS master & slave
+master=yes
+slave=yes
+
+# Allow AXFR from everywhere (data is available publicly on GitHub anyway)
+allow-axfr-ips=
+
+# To be anonymous
+version-string=anonymous
