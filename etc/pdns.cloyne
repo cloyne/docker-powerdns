@@ -9,9 +9,9 @@ daemon=no
 master=yes
 slave=yes
 
-# Allow AXFR from everywhere (data is available publicly on GitHub anyway)
+# Allow AXFR (data is available publicly on GitHub)
 disable-axfr=no
-allow-axfr-ips=
+allow-axfr-ips=50.0.115.224/28
 
 # To be anonymous
 version-string=anonymous
