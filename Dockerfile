@@ -1,12 +1,10 @@
-FROM cloyne/base
+FROM cloyne/runit
 
 MAINTAINER Mitar <mitar.docker@tnode.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q -q
-
-RUN apt-get install runit --yes --force-yes
 
 RUN apt-get install pdns-server --yes --force-yes
 
@@ -29,5 +27,3 @@ RUN chown nobody:nogroup /var/log/powerdns
 RUN /bin/echo -e 'bind-check-interval=3600' >> /etc/powerdns/pdns.d/pdns.simplebind
 
 COPY ./etc/pdns.cloyne /etc/powerdns/pdns.d/pdns.cloyne
-
-ENTRYPOINT ["/usr/sbin/runsvdir-start"]
