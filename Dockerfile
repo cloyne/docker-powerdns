@@ -2,8 +2,6 @@ FROM cloyne/runit
 
 MAINTAINER Mitar <mitar.docker@tnode.com>
 
-ENV DEBIAN_FRONTEND noninteractive
-
 EXPOSE 53/udp 53/tcp
 
 RUN apt-get update -q -q && \
