@@ -11,7 +11,7 @@ slave=yes
 
 # Allow AXFR (data is available publicly on GitHub)
 disable-axfr=no
-allow-axfr-ips=50.0.115.224/28
+allow-axfr-ips=64.62.133.40/29
 
 # To be anonymous
 version-string=anonymous
