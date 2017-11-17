@@ -1,3 +1,0 @@
-#!/bin/bash -e
-
-exec /usr/sbin/pdns_server 2>&1

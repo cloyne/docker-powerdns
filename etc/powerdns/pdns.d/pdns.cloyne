@@ -1,17 +1,20 @@
-# Disable recursion
+# Disable recursion.
 allow-recursion=
 
-# We use runit to assure the process is running
+# We use runit to assure the process is running.
 guardian=no
 daemon=no
 
-# DNS master & slave
+# DNS master & slave.
 master=yes
 slave=yes
 
-# Allow AXFR (data is available publicly on GitHub)
+# Allow AXFR (data is available publicly on GitHub).
 disable-axfr=no
 allow-axfr-ips=64.62.133.40/29
 
-# To be anonymous
+# To be anonymous.
 version-string=anonymous
+
+# Check interval.
+bind-check-interval=3600
