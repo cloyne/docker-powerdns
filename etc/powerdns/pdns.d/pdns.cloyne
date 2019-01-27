@@ -18,3 +18,7 @@ version-string=anonymous
 
 # Check interval.
 bind-check-interval=3600
+
+# Use bindbackend
+launch=bind
+bind-config=/etc/powerdns/bindbackend.conf
