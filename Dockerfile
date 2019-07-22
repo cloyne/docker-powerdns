@@ -1,3 +1,3 @@
-FROM tozd/powerdns
+FROM clonm/powerdns
 
 COPY ./etc /etc
